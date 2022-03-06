@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
 import './App.css';
-
+import TodoApp from './todoapp';
+import Usereducertut from './useReducer';
 function App() {
+const [model,handleModel]=useState(true);
+
+
+const modelh=()=>{
+  handleModel(!model);
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <>
+ <button onClick={()=>{modelh()}}>Show To Do list</button>
+{model?<TodoApp/>:<h1>No Model Shown</h1>}
+ </>
   );
 }
 

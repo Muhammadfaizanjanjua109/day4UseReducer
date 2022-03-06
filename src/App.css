@@ -1,7 +1,29 @@
+*{
+  background-color: rgb(164, 236, 174);
+}
 .App {
   text-align: center;
 }
+.buttona{
+  color:'red';
+  padding:3px;
+  border-radius:'6px';
+  margin: '10px';
+}
+.divborder{
+  border: 2px solid black;
+  border-radius: 6px;
+  width: 33%;
+  background-color:rgba(175, 216, 235, 0.68);
+  box-shadow: black 1px;
+}
 
+
+
+.maindiv{
+  display: flex;
+  justify-content: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
